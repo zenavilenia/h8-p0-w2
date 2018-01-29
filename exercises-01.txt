@@ -18,7 +18,7 @@ ELSE
 
 3. Laundry Day
 STORE "jumlahBaju" = 20
-FOR (var i = 1; i <= jumlahBaju.length; i++)
+FOR (var i = 1; i <= jumlahBaju; i++)
   DISPLAY "Baju ke - " + i
 DISPLAY "NYALAKAN MESIN CUCI"
 
