@@ -24,7 +24,7 @@ DISPLAY "NYALAKAN MESIN CUCI"
 
 4. Periksa Kuku
 STORE "murid" = [] <-- 40 murid
-FOR (var i = 0; i < jumlahMurid.length; i++)
+FOR (var i = 0; i < murid.length; i++)
   IF murid[i] memiliki kuku panjang
     DISPLAY murid[i] + " akan di hukum"
   ELSE
