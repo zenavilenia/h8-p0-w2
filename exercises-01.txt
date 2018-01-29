@@ -1,0 +1,31 @@
+1. Newton Second Law
+STORE "m" = 600
+STORE "a" = 2
+SET "Σf" = "m" * "a"
+DISPLAY "Σf"
+
+2. Tahun Kabisat
+STORE "tahun" = 2018
+IF tahun%4 = 0
+  IF tahun%100 != 0
+    DISPLAY "Tahun kabisat"
+  ELSE IF tahun%400 = 0
+    DISPLAY "Tahun kabisat"
+  ELSE
+    DISPLAY "Bukan tahun kabisat"
+ELSE
+  DISPLAY "Bukan tahun kabisat"
+
+3. Laundry Day
+STORE "jumlahBaju" = 20
+FOR (var i = 1; i <= jumlahBaju.length; i++)
+  DISPLAY "Baju ke - " + i
+DISPLAY "NYALAKAN MESIN CUCI"
+
+4. Periksa Kuku
+STORE "murid" = [] <-- 40 murid
+FOR (var i = 0; i < jumlahMurid.length; i++)
+  IF murid[i] memiliki kuku panjang
+    DISPLAY murid[i] + " akan di hukum"
+  ELSE
+    DISPLAY murid[i] + " akan mendapatkan pujian"
