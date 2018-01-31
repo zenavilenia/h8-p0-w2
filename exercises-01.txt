@@ -6,20 +6,16 @@ DISPLAY "Σf"
 
 2. Tahun Kabisat
 STORE "tahun" = 2018
-IF tahun%4 = 0
-  IF tahun%100 != 0
-    DISPLAY "Tahun kabisat"
-  ELSE IF tahun%400 = 0
-    DISPLAY "Tahun kabisat"
-  ELSE
-    DISPLAY "Bukan tahun kabisat"
+IF (tahun%4 = 0 && tahun%100 != 0) || (tahun%4 = 0 && tahun%100 = 0 && tahun%400 = 0)
+  DISPLAY "Tahun kabisat"
 ELSE
   DISPLAY "Bukan tahun kabisat"
 
 3. Laundry Day
-STORE "jumlahBaju" = 20
-FOR (var i = 1; i <= jumlahBaju; i++)
-  DISPLAY "Baju ke - " + i
+STORE "jumlahBaju" = 0
+WHILE jumlahBaju < 20
+  jumlahBaju++
+  DISPLAY "Baju ke - " + jumlahBaju
 DISPLAY "NYALAKAN MESIN CUCI"
 
 4. Periksa Kuku
