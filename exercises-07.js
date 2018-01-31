@@ -27,10 +27,8 @@ console.log(bintang2);
 var rows3 = 5;
 var bintang3 = "";
 for(var i = 0; i < rows2; i++) {
-  for(var j = 0; j < rows2; j++) {
-    if(j <= i) {
+  for(var j = 0; j <= i; j++) {
       bintang3 += "*";
-    }
   }
   bintang3 += "\n";
 }
