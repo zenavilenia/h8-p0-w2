@@ -26,7 +26,7 @@ console.log(bintang2);
 
 var rows3 = 5;
 var bintang3 = "";
-for(var i = 0; i < rows2; i++) {
+for(var i = 0; i < rows3; i++) {
   for(var j = 0; j <= i; j++) {
       bintang3 += "*";
   }
